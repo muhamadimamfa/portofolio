@@ -1,12 +1,12 @@
 [
   {
-    "name": "NotyStack Android",
-    "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
+    "name": "Beauty Bulter",
+    "desc": "HTML5, CSS3, Bootstrap, JavaScript, ReactJs, NodeJs, MySQL, Sequelize, ExpressJs.",
     "image": "notystackandroid",
-    "category": "android",
+    "category": "mern",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
-      "code": "https://github.com/jigar-sable/notystack-android"
+      "view": "https://www.mybeautybutler.com/",
+      "code": ""
     }
   },
   {

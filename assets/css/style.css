@@ -34,10 +34,10 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
+  background: rgb(8, 109, 192);
 }
 html::-webkit-scrollbar-thumb {
-  background: #420177;
+  background: #0b3249;
 }
 
 /* pre loader start */
@@ -79,24 +79,24 @@ section {
 }
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: rgb(3, 71, 105);
   font-weight: 800;
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: rgb(3, 71, 105);
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #076399;
 }
 header .logo i {
   font-size: 2.2rem;
 }
 header .logo:hover {
-  color: #fc8c05;
+  color: #bda419;
 }
 header .navbar ul {
   list-style: none;
@@ -117,8 +117,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: #2470b8;
+  border-bottom: 0.2rem solid #bbac24;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -226,10 +226,15 @@ header .navbar ul li a:hover {
   font-weight: 800;
   color: #002057;
 }
+.home .content h2 span .heritages {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #7198db;
+}
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: rgb(180, 155, 9);
 }
 .home .content p {
   font-size: 2.5rem;
@@ -239,7 +244,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color:  #2066a8;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -251,8 +256,8 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  background: linear-gradient(to bottom, rgb(1, 32, 61), #2470b8);
+  /* box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6); */
   font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -266,7 +271,8 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: linear-gradient(to bottom,#2470b8, rgb(1, 32, 61) );
+  color:rgb(255, 255, 255)
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -289,7 +295,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
+  color: #e7e7e7;
   background-color: #09011b;
   width: 44px;
   height: 44px;
@@ -307,19 +313,19 @@ header .navbar ul li a:hover {
   background-color: #0685da;
 }
 .social-icons a.github:hover {
-  background-color: #0e0e0e;
+  background-color: #0685da;
 }
 .social-icons a.twitter:hover {
-  background-color: #00aced;
+  background-color: #0685da;
 }
 .social-icons a.linkedin:hover {
-  background-color: #007bb6;
+  background-color: #0685da;
 }
 .social-icons a.dev:hover {
-  background-color: #070707;
+  background-color: #0685da;
 }
 .social-icons a.instagram:hover {
-  background-color: #ee00da;
+  background-color: #0685da;
 }
 /* social icons end */
 
@@ -361,8 +367,8 @@ header .navbar ul li a:hover {
 }
 .about .row .image img {
   margin: 4rem;
-  width: 30rem;
-  height: auto;
+  width: 400px;
+  height: 390px;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
@@ -377,7 +383,11 @@ header .navbar ul li a:hover {
   padding: 3rem;
 }
 .about .row .content h3 {
-  color: rgb(27, 27, 27);
+  color: rgb(180, 155, 9);
+  font-size: 2.5rem;
+}
+.about .row .content h3 span{
+  color: rgb(180, 155, 9);
   font-size: 2.5rem;
 }
 .about .row .content .tag {
@@ -404,9 +414,9 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: #0c67bb;
 }
-.resumebtn {
+/* .resumebtn {
   margin-top: 6rem;
 }
 .resumebtn .btn {
@@ -433,7 +443,7 @@ header .navbar ul li a:hover {
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
-}
+} */
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
   .about .row .image {
@@ -461,13 +471,14 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, #01203d, #2470b8);
+  margin-top: -300px;
 }
 .skills h2 {
   color: #fff;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color:  rgb(216, 188, 32);
 }
 .skills .container {
   background: rgba(0, 0, 22, 0.4);
@@ -514,6 +525,10 @@ header .navbar ul li a:hover {
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
+
+  .skills{
+    margin-top: 300px;
+  }
   .skills .container {
     padding: 0;
     margin: 0;
@@ -642,14 +657,14 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: linear-gradient(to bottom,#01203d, #2470b8);
 }
 .work h2 {
   color: #fff;
   padding: 1rem;
 }
 .work .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(216, 188, 32);
 }
 .work .box-container {
   display: flex;
@@ -847,7 +862,7 @@ header .navbar ul li a:hover {
 }
 .experience .content .desc {
   margin-left: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 10px;
 }
 .experience .content .desc h3 {
   font-size: 1.5rem;
@@ -940,7 +955,7 @@ header .navbar ul li a:hover {
   width: 100%;
   background: #fff;
   border-radius: 1.5rem;
-  margin: 2rem 5rem;
+  margin: 2rem auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 .contact .container .content {
@@ -1002,11 +1017,11 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid rgb(115, 3, 167);
+  border: 2px solid rgb(11, 80, 136);
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: rgb(115, 3, 167);
+  color: rgb(11, 80, 136);
 }
 form .message {
   position: relative;
@@ -1041,13 +1056,13 @@ form .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  background: linear-gradient(to bottom, rgb(1, 32, 61), #2470b8);
+  /* box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6); */
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
 }
 .button-area button:hover {
-  background: #421cecf5;
+  background: linear-gradient(to bottom,#2470b8, rgb(1, 32, 61));
 }
 .button-area span {
   font-size: 17px;
@@ -1091,7 +1106,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: rgb(0, 1, 43);
+  background: linear-gradient(to bottom,#01203d, #2470b8);
 }
 .footer .box-container {
   display: flex;
@@ -1116,7 +1131,7 @@ form .button-area {
 }
 .footer .box-container .box p i {
   padding-right: 1rem;
-  color: #ffae00;
+  color: #e6c718;
 }
 .footer .box-container .box a {
   font-size: 1.5rem;
@@ -1125,7 +1140,7 @@ form .button-area {
   display: block;
 }
 .footer .box-container .box a:hover {
-  color: #ffae00;
+  color: #e6c718;
 }
 .footer .box-container .box .share {
   display: flex;
@@ -1149,7 +1164,7 @@ form .button-area {
   background: transparent;
   transform: scale(0.98);
   border: 0.1rem solid rgb(180, 178, 178);
-  color: #ffae00;
+  color: #f7f6f4;
 }
 .footer .credit {
   padding: 1rem 0 0 0;
@@ -1161,7 +1176,7 @@ form .button-area {
   border-top: 0.1rem solid #fff3;
 }
 .footer .credit a {
-  color: #ffae00;
+  color: #f8d614;
 }
 .footer .fa {
   color: #e90606;
@@ -1213,8 +1228,8 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ffae00;
-  color: rgb(13, 0, 44);
+  background: linear-gradient(to bottom,#01203d, #2470b8);
+  color: rgb(240, 238, 243);
   border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;

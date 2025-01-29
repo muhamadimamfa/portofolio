@@ -52,7 +52,7 @@ header{
 }
 section{
   min-height: 100vh;
-  padding: 2rem 9%;
+  padding: 1rem 9%;
 }
 header .logo{
   font-size: 1.9rem;
