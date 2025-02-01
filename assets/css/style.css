@@ -964,9 +964,19 @@ header .navbar ul li a:hover {
   justify-content: space-between;
   padding: 2.5rem 2rem;
 }
+
+.contact .content {
+  display: flex;
+  flex-direction: column; /* Change from row to column */
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+}
+
 .contact .content .image-box {
   max-width: 60%;
   margin-left: 4rem;
+  display: none;
 }
 .contact .content .image-box img {
   width: 100%;
