@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: #036e86;
+  background: #e6eff1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -971,7 +971,7 @@ header .navbar ul li a:hover {
 .contact .content .image-box img {
   width: 100%;
   height: 40rem;
-  position: relative;
+  /* position: relative; */
 }
 .contact .content form {
   width: 45%;
@@ -990,7 +990,7 @@ form .form-group {
   width: 100%;
 }
 form i {
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 18px;
   color: rgb(51, 51, 51);
