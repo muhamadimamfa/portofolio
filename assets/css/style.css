@@ -971,7 +971,7 @@ header .navbar ul li a:hover {
 .contact .content .image-box img {
   width: 100%;
   height: 40rem;
-  /* position: relative; */
+  position: relative;
 }
 .contact .content form {
   width: 45%;
