@@ -1,11 +1,11 @@
 [
   {
-    "name": "NotyStack Android",
+    "name": "Sales Analysis",
     "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
     "image": "notystackandroid",
-    "category": "android",
+    "category": "Data Analytics",
     "links": {
-      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "view": "https://app.fabric.microsoft.com/view?r=eyJrIjoiYWE0OWQxMGItY2E2MS00MDdlLTgxYjktYTM4YjgyMDA3YzgzIiwidCI6ImQ0MDQyZDNkLWZiNTQtNDYyMy04ZTBkLTNkN2Y4ZTcxM2YyMyIsImMiOjEwfQ%3D%3D",
       "code": "https://github.com/jigar-sable/notystack-android"
     }
   },
