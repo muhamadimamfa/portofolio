@@ -75,13 +75,9 @@ var typed = new Typed(".typing-text", {
         "Data Analysis",
         "Power BI Development",
         "Microsoft Fabric",
-        "ETL Automation",
-        "SQL & T-SQL",
-        "DAX",
         "Data Visualization",
-        "Semantic Modeling",
-        "Python for Data",
-        "Business Intelligence"
+        "SQL & T-SQL"
+        
     ],
     loop: true,
     typeSpeed: 50,
