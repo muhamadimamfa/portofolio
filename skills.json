@@ -1,6 +1,6 @@
 [
   {
-    "name": "Power BI",
+    "name": "PowerBI",
     "icon": "https://img.icons8.com/color/48/power-bi.png"
   },
   {
@@ -17,7 +17,7 @@
   },
   {
     "name": "Azure Data Lake",
-    "icon": "https://img.icons8.com/fluency/48/cloud-storage.png"
+    "icon": "https://img.icons8.com/color/48/cloud.png"
   },
   {
     "name": "Delta Lake",
@@ -29,7 +29,7 @@
   },
   {
     "name": "SQL Server",
-    "icon": "https://img.icons8.com/ios-filled/48/1E90FF/microsoft-sql-server.png"
+    "icon": "https://img.icons8.com/color/48/microsoft-sql-server.png"
   },
   {
     "name": "PostgreSQL",
@@ -45,7 +45,7 @@
   },
   {
     "name": "DAX",
-    "icon": "https://img.icons8.com/fluency/48/microsoft-excel-2019.png"
+    "icon": "https://img.icons8.com/color/48/microsoft-excel-2019.png"
   },
   {
     "name": "Power Query",
@@ -61,7 +61,7 @@
   },
   {
     "name": "SSRS",
-    "icon": "https://img.icons8.com/color/48/report-card.png"
+    "icon": "https://img.icons8.com/color/48/pivot-table.png"
   },
   {
     "name": "SSIS",
@@ -73,18 +73,26 @@
   },
   {
     "name": "Semantic Modeling",
-    "icon": "https://img.icons8.com/fluency/48/data-configuration.png"
+    "icon": "https://img.icons8.com/color/48/combo-chart--v1.png"
   },
   {
     "name": "ETL",
-    "icon": "https://img.icons8.com/external-flatart-icons-outline-flatarticons/48/external-etl-data-science-flatart-icons-outline-flatarticons.png"
+    "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/external-etl-big-data-flaticons-lineal-color-flat-icons.png"
   },
   {
     "name": "Data Governance",
-    "icon": "https://img.icons8.com/external-flatart-icons-outline-flatarticons/48/external-data-governance-big-data-flatart-icons-outline-flatarticons.png"
+    "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/external-data-protection-big-data-flaticons-lineal-color-flat-icons.png"
   },
   {
-    "name": "RLS & RBAC",
-    "icon": "https://img.icons8.com/ios-filled/48/lock.png"
+    "name": "RBAC",
+    "icon": "https://img.icons8.com/ios-filled/48/lock-2.png"
+  },
+  {
+    "name": "Business Intelligence",
+    "icon": "https://img.icons8.com/color/48/business-intelligence.png"
+  },
+  {
+    "name": "Data Visualization",
+    "icon": "https://img.icons8.com/color/48/combo-chart.png"
   }
 ]
