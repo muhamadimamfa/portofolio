@@ -66,15 +66,15 @@ document.addEventListener('visibilitychange',
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            document.title = "Portfolio | Moiz Patvi";
+            $("#favicon").attr("href", "assets/images/favicon.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["PowerBI", "Tableau", "Data Modeling", "Data Visualization", "Data Storytelling", "SQL & T-SQL"],
+    strings: ["PowerBI", "Tableau", "Data Modeling", "Data Visualization", "SQL & T-SQL"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
