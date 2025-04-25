@@ -9,23 +9,23 @@
   },
   {
     "name": "Azure Data Factory",
-    "icon": "https://img.icons8.com/color/48/azure-1.png"
+    "icon": "assets/images/skills/adf-removebg-preview.png"
   },
   {
     "name": "Azure Synapse",
-    "icon": "https://img.icons8.com/color/48/azure-1.png"
+    "icon": "assets/images/skills/synapse-removebg-preview.png"
   },
   {
     "name": "Azure Data Lake",
-    "icon": "https://img.icons8.com/color/48/cloud.png"
+    "icon": "assets/images/skills/datalake-removebg-preview.png"
   },
   {
     "name": "Delta Lake",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Delta_Lake_logo.png/48px-Delta_Lake_logo.png"
+    "icon": "assets/images/skills/delta_lake-removebg-preview.png"
   },
   {
     "name": "Microsoft OneLake",
-    "icon": "https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-icon.png"
+    "icon": "assets/images/skills/onelake.png"
   },
   {
     "name": "SQL Server",
@@ -61,7 +61,7 @@
   },
   {
     "name": "SSRS",
-    "icon": "https://img.icons8.com/color/48/pivot-table.png"
+    "icon": "assets/images/skills/onelake.png"
   },
   {
     "name": "SSIS",
@@ -69,7 +69,7 @@
   },
   {
     "name": "DevOps",
-    "icon": "https://img.icons8.com/color/48/azure-devops.png"
+    "icon": "https://img.icons8.com/color/48/ssrs-removebg-preview.png"
   },
   {
     "name": "Semantic Modeling",
@@ -77,19 +77,19 @@
   },
   {
     "name": "ETL",
-    "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/external-etl-big-data-flaticons-lineal-color-flat-icons.png"
+    "icon": "assets/images/skills/etlicon-removebg-preview.png"
   },
   {
     "name": "Data Governance",
-    "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/external-data-protection-big-data-flaticons-lineal-color-flat-icons.png"
+    "icon": "assets/images/skills/data_gov-removebg-preview.png"
   },
   {
     "name": "RBAC",
-    "icon": "https://img.icons8.com/ios-filled/48/lock-2.png"
+    "icon": "assets/images/skills/rbac-removebg-preview.png"
   },
   {
     "name": "Business Intelligence",
-    "icon": "https://img.icons8.com/color/48/business-intelligence.png"
+    "icon": "assets/images/skills/BI-removebg-preview.png"
   },
   {
     "name": "Data Visualization",
