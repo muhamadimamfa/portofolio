@@ -20,7 +20,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Heritage Solution";
+            document.title = "Projects | Heritage Solution";
             $("#favicon").attr("href", "/assets/images/Heritage.jpeg");
         }
         else {
