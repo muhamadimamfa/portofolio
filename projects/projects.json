@@ -2,7 +2,7 @@
   {
     "name": "PIONEER",
     "desc": "HTML5, CSS3, Bootstrap, JavaScript, ReactJs, NodeJs, MySQL, Sequelize, ExpressJs.",
-    "image": "PIONEER LOGO33 1",
+    "image": "pioneers",
     "category": "mern",
     "links": {
       "view": "http://pioneersaccountancy.com/",
@@ -22,7 +22,7 @@
   {
     "name": "KOS: Wellness Simplified",
     "desc": "KOS: Wellness Simplified built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
-    "image": "kos_logo_300x300",
+    "image": "kos",
     "category": "android",
     "links": {
       "view": "https://kos.com/collections/shop-all",
