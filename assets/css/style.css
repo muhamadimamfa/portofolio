@@ -126,7 +126,7 @@ header .navbar ul li a:hover {
 /* hamburger icon starts*/
 #menu {
   font-size: 3rem;
-  cursor: pointer;
+  cursor: pointer; 
   color: rgb(24, 2, 63);
   display: none;
 }
@@ -667,10 +667,12 @@ header .navbar ul li a:hover {
   color: rgb(216, 188, 32);
 }
 .work .box-container {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   gap: 1.5rem;
-  margin: 2rem;
+  margin-left: -4rem;
 }
 .work .box-container .box {
   flex: 1 1 30rem;
@@ -902,6 +904,41 @@ header .navbar ul li a:hover {
 }
 .morebtn .btn:hover i {
   transform: translateX(5px);
+}
+
+/* work section media */
+
+@media screen and (max-width: 1310px) {
+  .work .box-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 1.5rem;
+    margin-left: -10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work .box-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .work .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 1.5rem;
+    margin-left: -4rem;
+  }
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

@@ -45,9 +45,9 @@ $(document).ready(function () {
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
+                alert("Form Submitted Successfully"); 
             }, function (error) {
-                console.log('FAILED...', error);
+                console.log('FAILED...', error); 
                 alert("Form Submission Failed! Try Again");
             });
         event.preventDefault();
@@ -102,7 +102,7 @@ function showSkills(skills) {
             </div>`
     });
     skillsContainer.innerHTML = skillHTML;
-}
+} 
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
@@ -111,10 +111,10 @@ function showProjects(projects) {
         projectHTML += `
         <div class="box tilt">
       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
+      <div class="content">  
         <div class="tag">
         <h3>${project.name}</h3>
-        </div>
+        </div> 
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
