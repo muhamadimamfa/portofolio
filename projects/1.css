@@ -195,14 +195,17 @@ header .navbar ul li a:hover{
   background-color: #fff;
   color: #000;
 }
+
 .work .box-container{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
   margin: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 .work .box-container .box{
-  flex:1 1 30rem;
+  width: 30rem;
   border-radius: .5rem;
   box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
   position: relative;
@@ -220,17 +223,18 @@ header .navbar ul li a:hover{
   height: 100%;
   width:100%;
   position: absolute;
-  top:85%; left:0;
+  top:80%; left:0;
   background:rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
 }
-.work .box-container .box .content .tag{
+
+.work .box-container .box .content .tag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  height: 6rem;
   width: 100%;
   padding-left: 1rem;
   background: #ffd900;
@@ -239,7 +243,7 @@ header .navbar ul li a:hover{
   font-size: 2rem;
 }
 .work .box-container .box:hover .content{
-  top: 25%;
+  top: 20%;
 }
 .work .desc {
   margin: 2rem;
