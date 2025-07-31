@@ -1,27 +1,53 @@
 {
-  "soft_skills": [
-    { "name": "Time & Risk Management", "icon_class": "fas fa-clock" },
-    { "name": "Communication", "icon_class": "fas fa-comments" },
-    { "name": "Authorship", "icon_class": "fas fa-pencil-alt" },
-    { "name": "Critical Thinking", "icon_class": "fas fa-lightbulb" },
-    { "name": "Public Speaking", "icon_class": "fas fa-microphone" },
-    { "name": "Analytical Skills", "icon_class": "fas fa-chart-line" },
-    { "name": "Laboratory Skill", "icon_class": "fas fa-flask" },
-    { "name": "Teamwork", "icon_class": "fas fa-users" },
-    { "name": "Leadership", "icon_class": "fas fa-user-tie" }
-  ],
-  "hard_skills": [
-    { "name": "Microsoft Excel", "icon_url": "https://img.icons8.com/color/48/000000/microsoft-excel-2019--v1.png" },
-    { "name": "Microsoft PowerPoint", "icon_url": "https://img.icons8.com/color/48/000000/microsoft-powerpoint-2019--v1.png" },
-    { "name": "Microsoft Word", "icon_url": "https://img.icons8.com/color/48/000000/microsoft-word-2019--v1.png" },
-    { "name": "Google Workspace", "icon_url": "https://img.icons8.com/color/48/000000/google-docs.png" },
-    { "name": "Google Analytical", "icon_url": "https://img.icons8.com/color/48/000000/google-analytics.png" },
-    { "name": "POM QM", "icon_url": "https://img.icons8.com/ios-filled/50/000000/gear.png" },
-    { "name": "Super Decision", "icon_url": "https://img.icons8.com/ios-filled/50/000000/brain.png" },
-    { "name": "Python", "icon_url": "https://img.icons8.com/color/48/000000/python--v1.png" },
-    { "name": "VS Code", "icon_url": "https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" },
-    { "name": "Canva", "icon_url": "https://img.icons8.com/color/48/000000/canva.png" },
-    { "name": "Photoshop", "icon_url": "https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png" },
-    { "name": "AutoCAD", "icon_url": "https://img.icons8.com/color/48/000000/autocad.png" }
-  ]
+
+  "soft_skills": [
+
+    "Time and risk management",
+
+    "Communication",
+
+    "Authorship",
+
+    "Critical thinking",
+
+    "Public speaking",
+
+    "Analytical skills",
+
+    "Laboratory skill",
+
+    "Teamwork",
+
+    "Leadership"
+
+  ],
+
+  "hard_skills": [
+
+    "Microsoft Excel",
+
+    "Microsoft Powerpoint",
+
+    "Microsoft Word",
+
+    "Google Workspace",
+
+    "Google Analytical",
+
+    "POM QM",
+
+    "Super Decision",
+
+    "Python",
+
+    "VS Code",
+
+    "Canva",
+
+    "Photoshop",
+
+    "AutoCAD"
+
+  ]
+
 }
