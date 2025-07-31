@@ -20,10 +20,12 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Jigar Sable";
+            // Updated: Page title when visible (Name corrected)
+            document.title = "Projects | Portfolio Muhamad Imam Fahurrozi";
             $("#favicon").attr("href", "/assets/images/favicon.png");
         }
         else {
+            // Updated: Page title when not visible
             document.title = "Come Back To Portfolio";
             $("#favicon").attr("href", "/assets/images/favhand.png");
         }
@@ -66,21 +68,21 @@ function showProjects(projects) {
     projectsContainer.innerHTML = projectsHTML;
 
     // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 20,
+    });
     // // vanilla tilt.js  
 
     // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
+    const srtop = ScrollReveal({
+        origin: 'bottom',
+        distance: '80px',
+        duration: 1000,
+        reset: true
+    });
 
     // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
+    srtop.reveal('.work .box', { interval: 200 });
 
     // isotope filter products
     var $grid = $('.box-container').isotope({
@@ -110,7 +112,7 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6'; // Ensure this Tawk.to property ID is correct for you
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
@@ -135,3 +137,14 @@ document.onkeydown = function (e) {
         return false;
     }
 }
+
+// Function for typed text (assuming this is from your main portfolio's script.js)
+// If this script.js is ONLY for the projects page, you might not need this.
+// But if it's shared, include it and update the text.
+var typed = new Typed(".typing-text", {
+    strings: ["quality control", "production processing", "laboratory analyst", "agroindustrial technology enthusiast"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 500,
+});
