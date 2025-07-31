@@ -544,40 +544,63 @@ header .navbar ul li a:hover {
   font-weight: 600;
   margin-top: 0.5rem;
 }
-.education .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: center; */ /* Ini bisa tetap center jika Anda mau konten utama box-containernya tetap vertikal center, atau hapus jika ingin dari atas */
-  align-items: flex-start;    /* UBAH INI dari 'center' menjadi 'flex-start' */
-  flex-direction: column;
+/* education section starts */
+.education {
+  /* Tambahkan atau pastikan background/padding untuk seluruh section .education */
+  /* Contoh: */
+  padding-top: 5rem; /* Menambahkan padding atas agar tidak terlalu mepet dengan navbar */
+  background: #f7f7f7; /* Sesuaikan dengan background halaman utama Anda jika berbeda */
 }
+
+/* Pastikan juga Anda memiliki heading untuk bagian edukasi Anda jika belum */
+/* Contoh: */
+.education .heading {
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem; /* Memberi jarak di bawah heading */
+}
+
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */ /* Ini bisa tetap center jika Anda mau konten utama box-containernya tetap vertikal center, atau hapus jika ingin dari atas */
+  align-items: flex-start;    /* UBAH INI dari 'center' menjadi 'flex-start' */
+  flex-direction: column;
+}
+
 .education .box-container .box {
   display: flex;
   flex-direction: row;
   width: 80%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  text-align: center;
+  text-align: left; /* <--- PERUBAHAN UTAMA DI SINI: DARI 'center' MENJADI 'left' */
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.3s;
   background: rgb(252, 252, 252);
 }
+
 .education .box-container .box:hover {
   transform: scale(1.03);
   box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
 }
+
 .education .box-container .box .image {
   flex: 1 1 20rem;
   width: 100%;
 }
+
 .education .box-container .box img {
   object-fit: cover;
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .education .box-container .box .content {
   position: relative;
   display: flex;
@@ -586,6 +609,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   flex: 1 1 70rem;
 }
+
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
   color: #012970;
@@ -594,11 +618,13 @@ header .navbar ul li a:hover {
   text-align: left;
   margin-left: 1rem;
 }
+
 .education .box-container .box .content p {
   font-size: 1.5rem;
   margin-left: 1rem;
   text-align: left;
 }
+
 .education h4 {
   font-size: 2rem;
   color: rgb(34, 109, 0);
@@ -607,6 +633,24 @@ header .navbar ul li a:hover {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
+
+/* Penambahan/Penyesuaian untuk UL dan LI agar pasti rata kiri dan memiliki indentasi */
+.education .box-container .box .content ul {
+    list-style-position: inside; /* Bullet point akan berada di dalam konten UL */
+    text-align: left; /* Pastikan rata kiri untuk UL */
+    padding-left: 0; /* Reset padding default browser jika menggunakan list-style-position: inside */
+    margin-left: 1rem; /* Sesuaikan margin untuk UL agar sejajar dengan h3/p/h4 */
+    margin-top: 1rem; /* Tambahkan sedikit jarak atas */
+}
+
+.education .box-container .box .content ul li {
+    font-size: 1.5rem;
+    line-height: 1.8; /* Memberi sedikit jarak antar baris item daftar */
+    text-align: left; /* Pastikan rata kiri untuk LI */
+    /* Jika Anda ingin indentasi lebih lanjut per item, gunakan padding-left di sini */
+    /* padding-left: 10px; */
+}
+
 
 /* education media queries starts*/
 @media screen and (max-width: 600px) {
@@ -629,7 +673,7 @@ header .navbar ul li a:hover {
     flex-wrap: wrap;
     flex: 0;
   }
-  .education .btns {
+  .education .btns { /* Ini mungkin bukan bagian dari section edukasi, jika iya, biarkan saja */
     margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
