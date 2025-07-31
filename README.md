@@ -1,7 +1,7 @@
 ## Portfolio-Website
 Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
-<a href="https://[GANTI_DENGAN_URL_PORTFOLIO_ANDA]](https://muhamadimamfa.github.io/portofolio/)" target="_blank">**Visit Now** 🚀</a>
+<a href="https://muhamadimamfa.github.io/portofolio" target="_blank">**Visit Now** 🚀</a>
 
 <h2>📬 Contact</h2>
 
