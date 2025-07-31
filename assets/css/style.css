@@ -545,11 +545,11 @@ header .navbar ul li a:hover {
   margin-top: 0.5rem;
 }
 .education .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */ /* Ini bisa tetap center jika Anda mau konten utama box-containernya tetap vertikal center, atau hapus jika ingin dari atas */
+  align-items: flex-start;    /* UBAH INI dari 'center' menjadi 'flex-start' */
+  flex-direction: column;
 }
 .education .box-container .box {
   display: flex;
