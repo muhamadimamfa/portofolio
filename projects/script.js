@@ -1,34 +1,4 @@
-$(document).ready(function () {
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
-
-    $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
-
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
-    });
-});
-
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            // Updated: Page title when visible (Name corrected)
-            document.title = "Projects | Portfolio Muhamad Imam Fahurrozi";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
-        }
-        else {
-            // Updated: Page title when not visible
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "/assets/images/favhand.png");
-        }
-    });
+// ... kode yang sama di bagian atas ...
 
 // fetch projects start
 function getProjects() {
@@ -45,22 +15,22 @@ function showProjects(projects) {
     projects.forEach(project => {
         projectsHTML += `
         <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}" alt="${project.name}" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>`
+            <div class="box tilt" style="width: 380px; margin: 1rem">
+                <img draggable="false" src="/assets/images/projects/${project.image}" alt="${project.name}" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>${project.name}</h3>
+                    </div>
+                    <div class="desc">
+                        <p>${project.desc}</p>
+                        <div class="btns">
+                            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     });
     projectsContainer.innerHTML = projectsHTML;
 
@@ -68,9 +38,7 @@ function showProjects(projects) {
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 20,
     });
-    // // vanilla tilt.js  
 
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
     const srtop = ScrollReveal({
         origin: 'bottom',
         distance: '80px',
@@ -78,10 +46,8 @@ function showProjects(projects) {
         reset: true
     });
 
-    // /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
 
-    // isotope filter products
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
@@ -90,7 +56,6 @@ function showProjects(projects) {
         }
     });
 
-    // filter items on button click
     $('.button-group').on('click', 'button', function () {
         $('.button-group').find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
@@ -102,43 +67,5 @@ function showProjects(projects) {
 getProjects().then(data => {
     showProjects(data);
 })
-// fetch projects end
 
-// Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6'; // Ensure this Tawk.to property ID is correct for you
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-// End of Tawk.to Live Chat
-
-// disable developer mode
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-}
-
-// Function for typed text (assuming this is from your main portfolio's script.js)
-// If this script.js is ONLY for the projects page, you might not need this.
-// But if it's shared, include it and update the text.
-var typed = new Typed(".typing-text", {
-    strings: ["quality control", "production processing", "laboratory analyst", "agroindustrial technology enthusiast"],
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
-});
+// ... kode yang sama di bagian bawah ...
