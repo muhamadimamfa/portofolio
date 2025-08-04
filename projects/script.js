@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -31,7 +30,6 @@ document.addEventListener('visibilitychange',
         }
     });
 
-
 // fetch projects start
 function getProjects() {
     return fetch("projects.json")
@@ -41,7 +39,6 @@ function getProjects() {
         });
 }
 
-
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
@@ -49,7 +46,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}" alt="project" />
+      <img draggable="false" src="/assets/images/projects/${project.image}" alt="${project.name}" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -130,9 +127,6 @@ document.onkeydown = function (e) {
     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
     }
@@ -148,6 +142,3 @@ var typed = new Typed(".typing-text", {
     backSpeed: 25,
     backDelay: 500,
 });
-
-
-
