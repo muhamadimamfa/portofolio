@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -37,8 +36,7 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
+    // $("#contact-form").submit(function (event) {
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
@@ -52,9 +50,7 @@ $(document).ready(function () {
             });
         event.preventDefault();
     });
-    // <!-- emailjs to mail contact form data -->
-
-});
+    // });
 
 document.addEventListener('visibilitychange',
     function () {
@@ -69,22 +65,19 @@ document.addEventListener('visibilitychange',
     });
 
 
-// <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
+// var typed = new Typed(".typing-text", {
     strings: ["fresh graduate", "quality control enthusiast", "operational management enthusiast", "production management enthusiast"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 500,
 });
-// <!-- typed js effect ends -->
-
-async function fetchData(type = "skills") {
+// async function fetchData(type = "skills") {
     let response
     type === "skills" ?
-        response = await fetch("skills.json")
+        response = await fetch("../skills.json") // Perbaikan: jalur relatif ke skills.json
         :
-        response = await fetch("./projects/projects.json")
+        response = await fetch("../projects.json") // Perbaikan: jalur relatif ke projects.json
     const data = await response.json();
     return data;
 }
@@ -110,8 +103,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
+      <img draggable="false" src="../images/projects/${project.image}" alt="project" /> <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
         </div>
@@ -127,13 +119,10 @@ function showProjects(projects) {
     });
     projectsContainer.innerHTML = projectHTML;
 
-    // <!-- tilt js effect starts -->
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
     });
-    // <!-- tilt js effect ends -->
-
-    /* ===== SCROLL REVEAL ANIMATION ===== */
+    // /* ===== SCROLL REVEAL ANIMATION ===== */
     const srtop = ScrollReveal({
         origin: 'top',
         distance: '80px',
@@ -154,14 +143,10 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-// <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
+// VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
-// <!-- tilt js effect ends -->
-
-
-// pre loader start
+// // pre loader start
 // function loader() {
 //     document.querySelector('.loader-container').classList.add('fade-out');
 // }
