@@ -688,6 +688,53 @@ header .navbar ul li a:hover {
   /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
 }
+/* Styling untuk bagian Projects yang baru */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Jarak antar item */
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-item {
+  width: 300px; /* Lebar setiap item */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.project-item:hover {
+  transform: translateY(-5px); /* Efek saat dihover */
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px; /* Tinggi gambar yang seragam */
+  object-fit: cover; /* Memastikan gambar terisi penuh tanpa distorsi */
+}
+
+.project-item .content {
+  padding: 15px;
+}
+
+.project-item .content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-item .content p {
+  color: #666;
+}
+
+/* Jika Anda ingin menghilangkan filter, Anda bisa menghapus bagian ini */
+#filters {
+  display: none;
+}
 .work h2 {
   color: #fff;
   padding: 1rem;
