@@ -45,3 +45,46 @@
   ]
 
 }
+
+[
+  {
+    "name": "Smart Packaging for Palm Sugar",
+    "desc": "Developed packaging for palm sugar with a smart and intelligent packaging concept.",
+    "image": "project-gula-aren",
+    "category": "packaging",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "SappanCare (Cholesterol Health Supplement)",
+    "desc": "Developed a health supplement to combat cholesterol from Sappan wood extract (Caesalpinia sappan L.).",
+    "image": "project-sappancare",
+    "category": "health",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Marketing Strategy for SMEs Tunjungrejo",
+    "desc": "Developed marketing modules and design for chip products at UMKM Tunjungrejo, as part of MMD Universitas Brawijaya program.",
+    "image": "project-umkm",
+    "category": "marketing",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "IoT Wastewater Monitoring System Prototype",
+    "desc": "Designed and built a prototype for an Internet of Things (IoT) based wastewater temperature and turbidity monitoring system.",
+    "image": "project-iot-wastewater",
+    "category": "iot",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]
